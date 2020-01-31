@@ -8,7 +8,7 @@ import {
     TouchableOpacity,
 } from 'react-native';
 
-import Styles from '../css/Styles.js'
+import Styles from '../css/Styles'
 export default class Form extends Component {
     render() {
         return (
@@ -31,15 +31,11 @@ export default class Form extends Component {
 
                     <TouchableOpacity
                         style={Styles.buttonStyle}>
-                        <Text style={Styles.textButtonStyle}> Login</Text>
+                        <Text style={Styles.textButtonStyle}> Continue</Text>
                     </TouchableOpacity>
 
                 </View>
-                <View style={{ flex: 2, justifyContent: 'flex-end' }}>
-                    <Text style={Styles.textSignUpStyle}> Don't have an account ?
-        <Text style={{ color: 'white', fontWeight: '500', fontSize: 20 }}> Sign In </Text>
-                    </Text>
-                </View>
+
             </View>
         )
     }

@@ -8,8 +8,6 @@ export default StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#263238',
-        alignItems: 'center',
-        justifyContent: 'center',
         paddingVertical: 20,
         height: ((Dimensions.get('window').height) - 100)
     

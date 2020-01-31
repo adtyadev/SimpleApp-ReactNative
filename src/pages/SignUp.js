@@ -28,9 +28,6 @@ export default class SignUp extends Component {
 
         return (
             <View style={Styles.container}>
-            <StatusBar
-              barStyle="light-content"
-            />
                 <SafeAreaView style={Styles.container}>
                     <ScrollView style={{}}
                         showsVerticalScrollIndicator={false}

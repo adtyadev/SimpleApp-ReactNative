@@ -7,9 +7,14 @@ import {
     TextInput,
     TouchableOpacity,
 } from 'react-native';
-
+import {
+    Actions
+} from 'react-native-router-flux';
 import Styles from '../css/Styles'
-export default class Form extends Component {
+export default class FormLogin extends Component {
+    Login(){
+        Actions.FrontPage();
+    }
     render() {
         return (
             <View>
@@ -30,8 +35,9 @@ export default class Form extends Component {
                     />
 
                     <TouchableOpacity
+                         onPress={this.Login}
                         style={Styles.buttonStyle}>
-                        <Text style={Styles.textButtonStyle}> Continue</Text>
+                        <Text style={Styles.textButtonStyle}> Login</Text>
                     </TouchableOpacity>
 
                 </View>

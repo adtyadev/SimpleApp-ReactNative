@@ -14,12 +14,12 @@ import {
 import KeyboardShift from '../components/KeyboardShift';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import Logo from '../components/Logo';
-import FormLogin from '../components/FormLogin';
+import Form from '../components/FormLogin';
 import Styles from '../css/Styles';
 import {
     Actions
 } from 'react-native-router-flux';
-export default class Login extends Component {
+export default class FrontPage extends Component {
 
     goBack(){
         Actions.pop();
@@ -33,12 +33,7 @@ export default class Login extends Component {
                         showsVerticalScrollIndicator={false}
                     >
                         <Logo />
-                        <FormLogin type="Login" />
-                        <View style={{ flex: 2, justifyContent: 'flex-end' }}>
-                            <Text style={Styles.textSignUpStyle}> Don't have an account ? </Text>
-                           <TouchableOpacity onPress={this.goBack}><Text style={Styles.textSignUpStyle}> Sign In </Text></TouchableOpacity>
-                           
-                        </View>
+                        <Text style={Styles.textSignUpStyle}> Halaman Pertama </Text>
                     </ScrollView>
                 </SafeAreaView>
                 <KeyboardSpacer />

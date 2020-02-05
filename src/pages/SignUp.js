@@ -16,7 +16,7 @@ import {
 import KeyboardShift from '../components/KeyboardShift.js';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import Logo from '../components/Logo.js';
-import Form from '../components/Form.js';
+import FormSignUp from '../components/FormSignUp.js';
 import Styles from '../css/Styles.js';
 
 export default class SignUp extends Component {
@@ -33,7 +33,7 @@ export default class SignUp extends Component {
                         showsVerticalScrollIndicator={false}
                     >
                         <Logo />
-                        <Form />
+                        <FormSignUp />
                         <Text style={Styles.textSignUpStyle}> Already have an account ? </Text>
                         <TouchableOpacity onPress={this.login}><Text style={Styles.textSignUpStyle}>Login</Text></TouchableOpacity>
                     </ScrollView>
